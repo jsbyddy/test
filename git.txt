@@ -24,3 +24,11 @@ git checkout -- test.txt //从版本库中恢复被删除的文件
 
 //远程访问github
 $ ssh-keygen -t rsa -C "youremail@example.com" //创建SSH Key
+$ git push origin master //push到远程库
+
+$ git checkout -b dev //git checkout命令加上-b参数表示创建并切换
+相当于以下两条命令：
+$ git branch dev
+$ git checkout dev
+
+$ git branch //列出所有分支
