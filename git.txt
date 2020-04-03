@@ -17,3 +17,10 @@ git reflog //用来记录每一次命令
 
 git 修改
 git checkout -- 文件名 //撤销修改，恢复到最近的版本
+$ git reset HEAD 文件名 //可以把暂存区的修改撤销掉（unstage），重新放回工作区
+rm test.txt //删除文件
+git rm test.txt //从版本库中删除该文件 并且git commit
+git checkout -- test.txt //从版本库中恢复被删除的文件
+
+//远程访问github
+$ ssh-keygen -t rsa -C "youremail@example.com" //创建SSH Key
