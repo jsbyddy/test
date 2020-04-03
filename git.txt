@@ -10,3 +10,5 @@ git diff //查看修改的内容
 提交修改和提交新文件是一样的两步：
 第一步是git add 
 第二步git commit
+
+git reset --hard HEAD^ //退回到上一个版本
