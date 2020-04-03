@@ -13,3 +13,4 @@ git diff //查看修改的内容
 
 git reset --hard HEAD^ //退回到上一个版本
 git reset --hard 1094a //退回到指定的版本
+git reflog //用来记录每一次命令
