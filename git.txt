@@ -31,4 +31,18 @@ $ git checkout -b dev //git checkout命令加上-b参数表示创建并切换
 $ git branch dev
 $ git checkout dev
 
+$ git switch -c dev //创建并切换到新的dev分支（推荐使用这个）
+$ git switch master
+使用新的git switch命令，比git checkout要更容易理解。
+
 $ git branch //列出所有分支
+$ git merge dev //合并指定分支到当前分支
+$ git branch -d dev //删除分支
+$ git stash //把当前工作现场“储藏”起来，等以后恢复现场后继续工作  
+用git stash apply恢复，但是恢复后，stash内容并不删除 
+用git stash pop恢复 恢复的同时把stash内容也删了
+
+$ git stash apply stash@{0} //恢复指定的stash
+$ git cherry-pick 4c805e2 //复制一个特定的提交到当前分支
+$ git tag v1.0 //打标签
+$ git tag -d v0.1 //删除标签
